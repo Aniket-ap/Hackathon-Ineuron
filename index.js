@@ -11,3 +11,13 @@
 //   });
 // });
 // container.dispatchEvent(newCustomEvent("scroll"));
+
+// function myFunction() {
+//     console.log("asfdsf");
+//     var x = document.getElementById("myTopnav");
+//     if (x.className === "ulnav") {
+//       x.className += " responsive";
+//     } else {
+//       x.className = "ulnav";
+//     }
+// }

@@ -33,6 +33,14 @@ nav {
   flex-wrap: wrap;
 }
 
+.topnav {
+  overflow: hidden;
+}
+
+.topnav .icon {
+  display: none;
+}
+
 .nav__logo {
   height: auto;
   width: auto;
@@ -67,38 +75,34 @@ nav a:hover {
   background-color: var(--bgc);
 }
 
-/* Hide Dropdowns by Default */
 nav ul ul {
   display: none;
   position: absolute;
-  top: 60px; /* the height of the main nav */
+  top: 60px;
 }
 
-/* Display Dropdowns on Hover */
 nav ul li:hover > ul {
   display: inherit;
 }
 
-/* Fisrt Tier Dropdown */
 nav ul ul li {
-  background-color: var(--main);
+  background-color: #eaeaea;
   width: 170px;
   float: none;
   display: list-item;
   position: relative;
 }
 
-/* Second, Third and more Tiers	*/
 nav ul ul ul li {
   position: relative;
   top: -60px;
   left: 170px;
 }
 
-/* Change this in order to change the Dropdown symbol */
 li > a:after {
-  content: " >";
+  content: " ";
 }
+
 li > a:only-child:after {
   content: "";
 }
@@ -276,52 +280,51 @@ li > a:only-child:after {
 }
 
 select {
-    appearance: none;
-    outline: 0;
-    border: 0;
-    box-shadow: none;
-    flex: 1;
-    padding: 0 1em;
-    color: var(--text);
-    background-color: var(--main);
-    background-image: none;
-    cursor: pointer;
-  }
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: var(--text);
+  background-color: var(--main);
+  background-image: none;
+  cursor: pointer;
+}
 
-  .select {
-    position: relative;
-    display: flex;
-    width: 50%;
-    height: 45px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
+.select {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 45px;
+  border-radius: 5px;
+  overflow: hidden;
+}
 
-  .select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1em;
-    background-color: var(--green);
-    transition: .25s all ease;
-    pointer-events: none;
-  }
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: var(--green);
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
 
-  .select:hover::after {
-    color: var(--text);
-  }
-  
+.select:hover::after {
+  color: var(--text);
+}
 
 .courses__input .input {
-    flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .courses__input .dropdown {
-    flex-basis: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .courses__buttons {
@@ -790,31 +793,34 @@ address {
 }
 
 @media screen and (max-width: 1024px) {
-    
-    .courses__buttons{
-        display: none;
-    }
+  nav ul {
+    order: 3;
+  }
 
-    .courses__input{
-        flex-direction: column;
-        padding: 0;
-    }
+  .courses__buttons {
+    display: none;
+  }
 
-    .courses__input .input{
-        margin: 30px 0;
-    }
+  .courses__input {
+    flex-direction: column;
+    padding: 0;
+  }
 
-    .container1 {
-        flex-wrap: wrap;
-    }
+  .courses__input .input {
+    margin: 30px 0;
+  }
 
-    .select{
-        width: 100%;
-    }
+  .container1 {
+    flex-wrap: wrap;
+  }
+
+  .select {
+    width: 100%;
+  }
 }
 
-@media screen and (min-width: 1025px){
-    .courses__input{
-        display: none;
-    }
+@media screen and (min-width: 1025px) {
+  .courses__input {
+    display: none;
+  }
 }
