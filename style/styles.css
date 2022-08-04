@@ -460,6 +460,7 @@ select {
   background: linear-gradient(90deg, #fefefe 50%, #f9f7ff 50%);
   height: auto;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .testimonials .heading {
@@ -534,6 +535,31 @@ select {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-250px * 7));
+	}
+}
+
+.slider {
+	/* background: white; */
+	/* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+}
+
+.slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
 }
 
 .team-profile {
