@@ -41,6 +41,90 @@ nav {
   display: none;
 }
 
+/* responsive nav */
+
+.ham{
+  display: none;
+}
+
+.res__none{
+  display: none;
+}
+
+.res__ul {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  top: 23;
+  background-color: #f1f1f1;
+  list-style: none;
+  z-index: 2;
+}
+
+
+.res__ul li {
+  display: block;
+  margin: 0 auto;
+}
+
+.res__ul a {
+  display: block;
+  padding: 0 10px;
+  color: var(--text);
+  line-height: 60px;
+  text-decoration: none;
+}
+
+.res__ul a:hover {
+  background-color: var(--bgc);
+}
+
+.res__ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+  list-style: none;
+}
+
+.res__ul li:hover > ul {
+  display: inherit;
+}
+
+.res__ul ul li {
+  background-color: #fafafa;
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+.res__ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  nav{
+    flex-wrap: nowrap;
+  }
+
+  .ham{
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+
+/* responsive nav end */
+
 .nav__logo {
   height: auto;
   width: auto;
@@ -731,6 +815,22 @@ address {
 /* Responsive */
 
 @media screen and (max-width: 480px) {
+  
+  nav{ 
+    margin: 0 10px;
+  }
+  .logo{
+    height: 25px;
+  }
+  .btn__primary {
+    margin: 0 5px;
+    font-size: 1.3rem;
+  }
+  
+  .btn__secondary {
+    padding: 5px 10px;
+    font-size: 1.3rem;
+  }
   .header__hero {
     flex-direction: column-reverse;
     height: auto;
@@ -784,6 +884,10 @@ address {
     font-size: 1.5rem;
   }
 
+  .courses{
+    padding: 0 20px;
+  }
+
   .testimonial__card {
     width: 400px;
   }
@@ -807,7 +911,8 @@ address {
     padding: 0 40px 40px 40px;
   }
   .achiever__img img {
-    margin: 20px;
+    margin: 10px;
+    width: auto;
   }
 
   .card_wrapper .card {
