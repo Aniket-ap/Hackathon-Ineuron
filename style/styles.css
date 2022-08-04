@@ -19,11 +19,27 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
   background-color: var(--bgc);
   color: var(--text);
+  scrollbar-width: thin;
+  /* scrollbar-color: var(--main) var(--green); */
+  scrollbar-color: var(--text);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--main);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green) ;
+  border-radius: 6px;
+  /* border: 3px solid var(--main); */
 }
 
 nav {
