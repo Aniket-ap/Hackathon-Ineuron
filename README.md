@@ -6,6 +6,9 @@
 This project part of the hackathon organised by Ineuron.The problem statement here is to build a home page for ineuron websites.
 
 ![Made with html & css](https://img.shields.io/badge/MADE%20WITH-HTML%26CSS-blue)
+## Screenshot
+
+![Screenshot](https://github.com/Aniket-ap/Hackathon-Ineuron/blob/main/ss1.jpg?raw=true)
 
 ## 🚀 About Me
 Hey 👋, I'm Aniket Pradhan, aspiring fullstack developer.
