@@ -815,7 +815,7 @@ address {
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 767px)  {
   .header__hero {
     flex-direction: column-reverse;
   }
@@ -908,5 +908,15 @@ address {
 @media screen and (min-width: 1025px) {
   .courses__input {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .header__hero{
+    flex-direction: row;
+  }
+
+  .hero__text h1{
+    font-size: 2.5rem;
   }
 }
